@@ -3,6 +3,8 @@ import NetlifyCMS from "astro-netlify-cms";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "static",
+  adapter: netlify(),
   integrations: [
     NetlifyCMS({
       config: {
